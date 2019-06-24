@@ -4,7 +4,7 @@ Created on Tue Jun 18 16:06:58 2019
 
 @author: Sergio Navarro
 """
-
+# Importar librerías
 import pandas as pd
 import numpy as np
 import seaborn as sns
