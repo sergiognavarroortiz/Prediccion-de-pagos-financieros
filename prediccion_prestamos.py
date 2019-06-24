@@ -2,7 +2,7 @@
 """
 Created on Tue Jun 18 16:06:58 2019
 
-@author: Esteban Arrieta
+@author: Sergio Navarro
 """
 
 import pandas as pd
@@ -352,7 +352,7 @@ class neuronal_network():
 warnings.filterwarnings("ignore")
 
 # Cargando Datos
-path = "C:/Users/Keitlan Arrieta/Documents/TRABAJO/LATBC/Perfiles financieros/Predicciones financieras completo/default-of-credit-card-clients-dataset/"
+path = "ruta de los datos"
 data = pd.read_csv(path + 'UCI_Credit_Card.csv', sep = ",")
 
 train, test = train_test_split(data, test_size = 0.2)
@@ -386,7 +386,7 @@ for k, v in enumerate(data["default.payment.next.month"]):
         val.append("Correcta")
     else:
         val.append("Incorrecta")
-#        
+       
 data["Validar_Prediccion"] = val
 
 writer = ExcelWriter(path + "prestamos.xlsx")
